@@ -2,6 +2,14 @@
 
 This repository provides a starter template for creating applications using Next.js (App Router) and AWS Amplify, emphasizing easy setup for authentication, API, and database capabilities.
 
+## Tech Stack
+
+- **Next.js 15** - React framework with App Router
+- **React 19** - Latest React with enhanced features
+- **Tailwind CSS 4** - Utility-first CSS framework with modern configuration
+- **TypeScript** - Type-safe development
+- **AWS Amplify Gen 2** - Backend infrastructure and services
+
 ## Overview
 
 This template equips you with a foundational Next.js application integrated with AWS Amplify, streamlined for scalability and performance. It is ideal for developers looking to jumpstart their project with pre-configured AWS services like Cognito, AppSync, and DynamoDB.
@@ -11,6 +19,24 @@ This template equips you with a foundational Next.js application integrated with
 - **Authentication**: Setup with Amazon Cognito for secure user authentication.
 - **API**: Ready-to-use GraphQL endpoint with AWS AppSync.
 - **Database**: Real-time database powered by Amazon DynamoDB.
+- **Styling**: Tailwind CSS 4 with simplified configuration using `@import "tailwindcss"`.
+
+## Getting Started
+
+1. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+2. **Run the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+3. **Open your browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## Deploying to AWS
 
