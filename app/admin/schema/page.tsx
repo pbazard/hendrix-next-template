@@ -5,6 +5,11 @@ import { useRouter } from "next/navigation";
 import { schemaManager } from "@/lib/admin/schema-manager";
 import type { FieldDefinition, FieldType } from "@/lib/admin/types";
 
+// Force client-side rendering to prevent SSR from accessing document/window
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+export const revalidate = 0;
+
 const FIELD_TYPES: { value: FieldType; label: string }[] = [
   { value: "string", label: "Text (Short)" },
   { value: "text", label: "Text (Long)" },

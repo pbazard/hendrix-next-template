@@ -1,65 +1,61 @@
-body {
-    margin: 0;
-    background: linear-gradient(180deg, rgb(117, 81, 194), rgb(255, 255, 255));
-    display: flex;
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
+/* Modern animations and effects */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
   }
-  
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+  50% {
+    transform: translateY(-20px);
   }
-  
-  button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
-    cursor: pointer;
-    transition: border-color 0.25s;
-    color: white;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    opacity: 0.5;
   }
-  button:hover {
-    border-color: #646cff;
+  50% {
+    opacity: 1;
   }
-  button:focus,
-  button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
   }
-  
-  ul {
-    padding-inline-start: 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    margin: 8px 0;
-    border: 1px solid black;
-    gap: 1px;
-    background-color: black;
-    border-radius: 8px;
-    overflow: auto;
+  100% {
+    background-position: 1000px 0;
   }
-  
-  li {
-    background-color: white;
-    padding: 8px;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+/* Neumorphic shadows */
+.neuro-shadow {
+  box-shadow: 8px 8px 16px rgba(163, 177, 198, 0.6),
+    -8px -8px 16px rgba(255, 255, 255, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  .neuro-shadow {
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4),
+      -8px -8px 16px rgba(255, 255, 255, 0.05);
   }
-  
-  li:hover {
-    background: #dadbf9;
-  }
-  
-  a {
-    font-weight: 800;
-    text-decoration: none;
-  }
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
