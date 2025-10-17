@@ -4,11 +4,11 @@
 
 ### Versions Updated
 
-| Package | Previous Version | New Version | Notes |
-|---------|-----------------|-------------|-------|
-| `aws-amplify` | 6.6.6 | **6.15.7** | Latest stable (requested 6.15.5+) |
-| `react` | 19.0.0 | **19.1.0** | React 19 stable release |
-| `react-dom` | 19.0.0 | **19.1.0** | Matches React version |
+| Package       | Previous Version | New Version | Notes                             |
+| ------------- | ---------------- | ----------- | --------------------------------- |
+| `aws-amplify` | 6.6.6            | **6.15.7**  | Latest stable (requested 6.15.5+) |
+| `react`       | 19.0.0           | **19.1.0**  | React 19 stable release           |
+| `react-dom`   | 19.0.0           | **19.1.0**  | Matches React version             |
 
 ### What's New in AWS Amplify 6.15.7
 
@@ -52,13 +52,13 @@ React 19.1.0 is the latest stable release with:
 
 ## Compatibility Status
 
-| Component | Status | Notes |
-|-----------|--------|-------|
-| Next.js 15.5.6 | ✅ Compatible | Working perfectly |
-| Tailwind CSS 4 | ✅ Compatible | No issues |
-| TypeScript 5.6 | ✅ Compatible | Type checking passes |
-| AWS Amplify UI React | ✅ Compatible | Using overrides |
-| Admin Interface | ✅ Working | All features functional |
+| Component            | Status        | Notes                   |
+| -------------------- | ------------- | ----------------------- |
+| Next.js 15.5.6       | ✅ Compatible | Working perfectly       |
+| Tailwind CSS 4       | ✅ Compatible | No issues               |
+| TypeScript 5.6       | ✅ Compatible | Type checking passes    |
+| AWS Amplify UI React | ✅ Compatible | Using overrides         |
+| Admin Interface      | ✅ Working    | All features functional |
 
 ## Override Configuration
 
@@ -90,11 +90,13 @@ This ensures all dependencies use React 19.1.0, preventing version conflicts.
 You can now:
 
 1. **Test the application**:
+
    ```bash
    npm run dev
    ```
 
 2. **Deploy to production**:
+
    - AWS Amplify
    - Vercel
    - Netlify
@@ -131,7 +133,7 @@ When deploying:
 ## Version History
 
 ```
-Oct 2025: 
+Oct 2025:
   - aws-amplify: 6.6.6 → 6.15.7
   - react: 19.0.0 → 19.1.0
   - react-dom: 19.0.0 → 19.1.0
