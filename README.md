@@ -20,6 +20,7 @@ This template equips you with a foundational Next.js application integrated with
 - **API**: Ready-to-use GraphQL endpoint with AWS AppSync.
 - **Database**: Real-time database powered by Amazon DynamoDB.
 - **Styling**: Tailwind CSS 4 with simplified configuration using `@import "tailwindcss"`.
+- **Admin Interface**: Django-like admin panel with full CRUD operations and dynamic model creation.
 
 ## Getting Started
 
@@ -37,6 +38,20 @@ This template equips you with a foundational Next.js application integrated with
 
 3. **Open your browser:**
    Navigate to [http://localhost:3000](http://localhost:3000)
+
+## Admin Interface
+
+This template includes a powerful Django-like admin interface:
+
+- **Access**: Navigate to [http://localhost:3000/admin/setup](http://localhost:3000/admin/setup)
+- **Features**: Dynamic model creation, full CRUD operations, multiple field types, validation, search & filtering
+- **Documentation**: See [ADMIN_COMPLETE.md](ADMIN_COMPLETE.md) for detailed usage guide
+
+Quick start:
+
+- Visit `/admin/setup` to seed example data
+- Or go directly to `/admin` to start fresh
+- Create models, add fields, manage records - all through the UI!
 
 ## Deploying to AWS
 
